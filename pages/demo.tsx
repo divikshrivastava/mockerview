@@ -9,36 +9,34 @@ import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 const questions = [
   {
     id: 1,
-    name: "Behavioral",
-    description: "From LinkedIn, Amazon, Adobe",
-    difficulty: "Easy",
+    name: "Data Analyst",
+    description: "From KPMG, Deloitte, PwC, etc.",
   },
   {
     id: 2,
-    name: "Technical",
+    name: "Software Developer",
     description: "From Google, Meta, and Apple",
-    difficulty: "Medium",
   },
 ];
 
 const interviewers = [
   {
+    id: "Sarah",
+    name: "Sarah",
+    description: "Friendly",
+    level: "L7",
+  },
+  {
     id: "John",
     name: "John",
-    description: "Software Engineering",
+    description: "Neutral",
     level: "L3",
   },
   {
     id: "Richard",
     name: "Richard",
-    description: "Product Management",
+    description: "Strict",
     level: "L5",
-  },
-  {
-    id: "Sarah",
-    name: "Sarah",
-    description: "Other",
-    level: "L7",
   },
 ];
 
@@ -307,34 +305,34 @@ export default function DemoPage() {
         <div className="w-full min-h-screen flex flex-col px-4 pt-2 pb-8 md:px-8 md:py-2 bg-[#FCFCFC] relative overflow-x-hidden">
           <p className="absolute w-full top-0 h-[60px] flex flex-row justify-between -ml-4 md:-ml-8">
             <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
+              beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20">
-              demo interview
+              beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
+            beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
+            beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
+            beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
+            beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
+            beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
+            beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
+            beta version
             </span>
             <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
+            beta version
             </span>
           </p>
           {completed ? (
@@ -389,39 +387,6 @@ export default function DemoPage() {
                     as you leave the page.
                   </p>
                 </div>
-                <Link
-                  href="https://github.com/Tameyer41/liftoff"
-                  target="_blank"
-                  className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
-                  style={{
-                    boxShadow:
-                      "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
-                  }}
-                >
-                  <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
-                    <svg
-                      className="w-[16px] h-[16px] text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z"
-                      ></path>
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5.5 6.5L12 12.25L18.5 6.5"
-                      ></path>
-                    </svg>
-                  </span>
-                  Star on Github
-                </Link>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
@@ -515,7 +480,6 @@ export default function DemoPage() {
                           <div className="h-full w-full aspect-video rounded md:rounded-lg lg:rounded-xl">
                             <video
                               id="question-video"
-                              onEnded={() => setVideoEnded(true)}
                               controls={false}
                               ref={vidRef}
                               playsInline
@@ -762,39 +726,6 @@ export default function DemoPage() {
                     >
                       Restart demo
                     </button>
-                    <Link
-                      href="https://github.com/Tameyer41/liftoff"
-                      target="_blank"
-                      className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
-                      style={{
-                        boxShadow:
-                          "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
-                      }}
-                    >
-                      <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
-                        <svg
-                          className="w-[16px] h-[16px] text-white"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z"
-                          ></path>
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M5.5 6.5L12 12.25L18.5 6.5"
-                          ></path>
-                        </svg>
-                      </span>
-                      Star on Github
-                    </Link>
                   </div>
                 </div>
               )}
@@ -843,11 +774,11 @@ export default function DemoPage() {
                   className="max-w-lg mx-auto px-4 lg:px-0"
                 >
                   <h2 className="text-4xl font-bold text-[#1E2B3A]">
-                    Select a question type
+                    Select your target job profile
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
                     We have hundreds of questions from top tech companies.
-                    Choose a type to get started.
+                    Choose a job profile to get started.
                   </p>
                   <div>
                     <RadioGroup value={selected} onChange={setSelected}>
@@ -896,7 +827,7 @@ export default function DemoPage() {
                                   className="flex text-sm ml-4 mt-0 flex-col text-right items-center justify-center"
                                 >
                                   <span className=" text-gray-500">
-                                    {question.difficulty === "Easy" ? (
+                                    {question.id === 1 ? (
                                       <svg
                                         className="h-full w-[16px]"
                                         viewBox="0 0 22 25"
@@ -959,9 +890,6 @@ export default function DemoPage() {
                                         />
                                       </svg>
                                     )}
-                                  </span>
-                                  <span className="font-medium text-gray-900">
-                                    {question.difficulty}
                                   </span>
                                 </RadioGroup.Description>
                                 <span
@@ -1390,7 +1318,7 @@ export default function DemoPage() {
                 <ul className="mb-auto list-none">
                   <li className="list-none flex items-center">
                     <p className="text-[12px] font-extrabold text-[#1E293B]">
-                      Liftoff
+                      Mockerview
                     </p>
                   </li>
                   <li className="mt-4 list-none flex items-center rounded-[9px] text-gray-900 py-[2px]">
