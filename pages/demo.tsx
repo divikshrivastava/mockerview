@@ -779,7 +779,9 @@ export default function DemoPage() {
                     Your resume helps us cater to specific areas that you are presenting to an actual interviewer.
                   </p>
                   <div>
-                    UPLOAD
+                  <form>                    
+                    <input id="file" type="file" />
+                  </form>
                   </div>
                   <div className="flex gap-[15px] justify-end mt-8">
                     <div>
@@ -1386,7 +1388,7 @@ export default function DemoPage() {
                 <ul className="mb-auto list-none">
                   <li className="list-none flex items-center">
                     <p className="text-[12px] font-extrabold text-[#1E293B]">
-                      Mockerview
+                      MockerView
                     </p>
                   </li>
                   <li className="mt-4 list-none flex items-center rounded-[9px] text-gray-900 py-[2px]">

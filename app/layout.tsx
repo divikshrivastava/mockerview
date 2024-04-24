@@ -2,11 +2,11 @@ import "../styles/globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mockerview - AI-Powered Mock Interviews",
+  title: "MockerView - AI-Powered Mock Interviews",
   openGraph: {
-    title: "Mockerview - AI-Powered Mock Interviews",
+    title: "MockerView - AI-Powered Mock Interviews",
     description:
-      "Mockerview is an AI-powered mock interview platform that helps you practice for your next job interview.",
+      "MockerView is an AI-powered mock interview platform that helps you practice for your next job interview.",
     images: [
       {
         url: "https://demo.useliftoff.com/opengraph-image",
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mockerview - AI-Powered Mock Interviews",
+    title: "MockerView - AI-Powered Mock Interviews",
     description:
-      "Mockerview is an AI-powered mock interview platform that helps you practice for your next job interview.",
+      "MockerView is an AI-powered mock interview platform that helps you practice for your next job interview.",
     images: ["https://demo.useliftoff.com/opengraph-image"],
     creator: "@tmeyer_me",
   },
